@@ -40,7 +40,7 @@ cd web-scraping-portfolio
 
 * Install Dependencies:
 ```
-pip install pandas requests beautifulsoup4 lxml curl_cffi playwright time random
+pip install pandas requests beautifulsoup4 lxml curl_cffi playwright
 playwright install
 
 ```
