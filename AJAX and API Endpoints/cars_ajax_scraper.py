@@ -8,8 +8,6 @@ cookies = {}  # replace with curl cookies
 
 headers = {}  # replace with curl headers
 
-not_done = True
-
 for car in [
     "BMW",
     "Ferrari",
