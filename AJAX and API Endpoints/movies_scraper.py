@@ -20,10 +20,7 @@ while years<=2015:
         year = item["year"]
         awards = item["awards"]
         nominations = item["nominations"]
-        try:
-            best_picture = item["best_picture"]
-        except KeyError:
-            ''
+        best_picture = item["best_picture", ""]
         data.append({
             "Title": title,
             "Year": year,

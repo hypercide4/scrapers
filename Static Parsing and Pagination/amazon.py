@@ -1,5 +1,6 @@
 import re
 import time
+from datetime import datetime
 
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -10,6 +11,7 @@ headers = {}  # replace with curl headers
 
 data = []
 pagenum = 1
+date = datetime.now().strftime("%Y-%m-%d")
 
 
 def parse_review_count(val):
@@ -154,7 +156,7 @@ try:
                 "isPrime": is_prime,
                 "URL": product_url,
                 "Image URL": img_url,
-                "Date Scraped": "2026-08-24",
+                "Date Scraped": date,
             }
 
             data.append(product_data)

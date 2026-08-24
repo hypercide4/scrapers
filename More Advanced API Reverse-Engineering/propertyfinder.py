@@ -91,7 +91,6 @@ while pagenum <= 500:
                     city = " ".join(location.get("slug_en", None).split("-")).title()
                 elif location.get("type") == "TOWN":
                     town = " ".join(location.get("slug_en", None).split("-")).title()
-            # location = " ".join(unquote(raw_location_slug).split("-")) if raw_location_slug else "None"
 
             agent_name = safe_get(item, ["property", "agent", "name"])
             agent_phone = safe_get(item, ["property", "contact_options", 1, "value"])
@@ -128,7 +127,7 @@ while pagenum <= 500:
             )
         time.sleep(random.uniform(0.5, 1.5))
     except Exception as e:
-        print("Error: " + e)
+        print(f"Error: {e}")
         df = pd.DataFrame(data)
         df.to_csv("propertyfinder.csv", index=False)
 

@@ -50,9 +50,7 @@ while counter <= 3:
             availability_count = ""
             number_of_reviews = ""
 
-            for (
-                row
-            ) in rows:  # can be replaced with a cat pattern function but i was too lazy
+            for row in rows:
                 if row.th.text == "UPC":
                     upc = row.td.text.strip()
                 if row.th.text == "Price (excl. tax)":
