@@ -17,6 +17,7 @@ The scripts are categorized by the complexity of the scraping challenge:
 ### 1. Static Parsing & Pagination
 * `books_to_scrape.py`: Scrapes basic book titles, prices, and star ratings across multiple catalog pages using `BeautifulSoup` and custom mapping dictionaries.
 * `books_to_scrape_2.py`: An advanced version that goes into individual product pages to extract detailed descriptions, UPCs, tax amounts, and availability counts.
+* `amazon.py`: Same as above (`books_to_scrape_2.py`) but on a real page example.
 
 ### 2. AJAX and API Endpoints
 * `movies_scraper.py`: Fetches awards, nominations, and "Best Picture" data directly from JSON endpoints year by year.
